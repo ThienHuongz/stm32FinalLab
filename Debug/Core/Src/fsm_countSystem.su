@@ -1,0 +1,2 @@
+../Core/Src/fsm_countSystem.c:8:6:wrapAroundCounter	4	static
+../Core/Src/fsm_countSystem.c:13:6:fsm_countSystem	8	static
