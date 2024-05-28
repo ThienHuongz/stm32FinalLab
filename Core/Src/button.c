@@ -1,8 +1,11 @@
 
 
 #include "button.h"
+// when long press detect
 #define TIME_FOR_LONG_KEY 100
-#define TIME_FOR_PRESS_KEY 200
+
+// detect long press key
+#define TIME_FOR_PRESS_KEY 300
 #define NUM_BUTTONS 3
 
 int KeyReg0[NUM_BUTTONS] = { SET };
