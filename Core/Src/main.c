@@ -17,8 +17,8 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include "fsm_simple_buttons_run.h"
 #include "main.h"
-#include "fsm_countSystem.h"
 #include "software_timer.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -100,7 +100,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  fsm_countSystem();
+	  fsm_simple_buttons_run();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

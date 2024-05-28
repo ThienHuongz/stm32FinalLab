@@ -1,7 +1,7 @@
 
 
 #include "button.h"
-#define TIME_FOR_LONG_KEY 25
+#define TIME_FOR_LONG_KEY 100
 #define TIME_FOR_PRESS_KEY 200
 #define NUM_BUTTONS 3
 

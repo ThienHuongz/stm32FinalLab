@@ -63,8 +63,8 @@ all: main-build
 main-build: FinalLab_NTThienHuong.elf secondary-outputs
 
 # Tool invocations
-FinalLab_NTThienHuong.elf FinalLab_NTThienHuong.map: $(OBJS) $(USER_OBJS) D:\STM32CubeIDE_1.14.1\Workspace\FinalLab_NTThienHuong\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "FinalLab_NTThienHuong.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\STM32CubeIDE_1.14.1\Workspace\FinalLab_NTThienHuong\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FinalLab_NTThienHuong.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+FinalLab_NTThienHuong.elf FinalLab_NTThienHuong.map: $(OBJS) $(USER_OBJS) D:\STM32CubeIDE_1.14.1\stm32Git\FinalLab_NTThienHuong\FinalLab_NTThienHuong\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "FinalLab_NTThienHuong.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\STM32CubeIDE_1.14.1\stm32Git\FinalLab_NTThienHuong\FinalLab_NTThienHuong\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FinalLab_NTThienHuong.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

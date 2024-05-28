@@ -177,4 +177,5 @@
 			<resource resourceType="PROJECT" workspacePath="/FinalLab_NTThienHuong"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
