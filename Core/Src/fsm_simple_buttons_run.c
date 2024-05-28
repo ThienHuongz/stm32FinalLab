@@ -15,14 +15,6 @@ void fsm_simple_buttons_run(){
 		n = 0;
 	}
 
-	if (is_long_button_flag(1) == 1){
-		wrapAroundCounter(++n);
-	}
-
-	if (is_long_button_flag(2) == 1){
-		wrapAroundCounter(--n);
-	}
-
 	if (is_button_pressed(1) == 1){
 		wrapAroundCounter(n++);
 	}
@@ -31,10 +23,6 @@ void fsm_simple_buttons_run(){
 		wrapAroundCounter(n--);
 	}
 
-	if (timer0_flag == 1){
-		HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-		setTimer0(100);
-	}
 	if (timer1_flag == 1){
 		display7SEG(n);
 		setTimer1(1);
